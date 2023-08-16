@@ -291,7 +291,7 @@ compile_opt defint32
 
   VWSC_OUTPUT, pcs_data, pcerr_data, pcs_phot, pcerr_phot, ngood_data, norm_data, chisq_data, lines, fluxfile, massfile, magfile, outfile
 
-  restore, especfile
+  restore, evecfile
   evecs = evecs[*,0:9]
   evals = evals[0:9]         
   variance = variance[0:9]
