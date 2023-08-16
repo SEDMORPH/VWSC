@@ -15,6 +15,7 @@ If you are happy to use the eigenbases created for the papers above (for the UDS
 Code dependencies:
 * You will also need to install the VWPCA package that can be found in the same SEDMORPH GitHub repository.
 * You will need the IDL coyote library, which can be found here: http://www.idlcoyote.com/documents/programs.php
+* You will need the TEXtoIDL code http://physics.mnstate.edu/craig/textoidl/
 * You will need to set you IDL_PATH environment variable, so that IDL knows where to look for all the code you install.
 
 
