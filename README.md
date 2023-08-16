@@ -12,6 +12,12 @@ The code to create your own supercolour basis (eigenvectors) is included in this
 
 If you are happy to use the eigenbases created for the papers above (for the UDS and COSMOS), these are available at http://www-star.st-and.ac.uk/~vw8/downloads/. BE VERY CAREFUL TO ENSURE YOU EXACTLY MATCH THE FILTERS IN YOUR DATASET TO THOSE USED HERE! 
 
+Code dependencies:
+* You will also need to install the VWPCA package that can be found in the same SEDMORPH GitHub repository.
+* You will need the IDL coyote library, which can be found here: http://www.idlcoyote.com/documents/programs.php
+* You will need to set you IDL_PATH environment variable, so that IDL knows where to look for all the code you install.
+
+
 
 
 
