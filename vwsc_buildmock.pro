@@ -40,12 +40,12 @@ PRO VWSC_BUILDMOCK, gridfile, evecfile, dir_figs, filterset,ind_filt, wave_norm,
 
      for j=0,nband_mock-1 do begin
         ind_ll = where(wave_obs_super eq ll_eff_mock[j])
-        ind = setintersection(ind_ll,ind_zz)
+        ind = vw_setintersection(ind_ll,ind_zz)
         if ind[0] ne -1 then begin
            flux_mock[ind_ll_mock[j],i] = flux_super[ind,i]
            flux_err_mock[ind_ll_mock[j],i] = flux_super_err[ind,i]     
         endif
-        ind = setintersection(ind_ll,ind_zphot)
+        ind = vw_setintersection(ind_ll,ind_zphot)
         if ind[0] ne -1 then begin
            flux_mock_zphot[ind_ll_mock[j],i] = flux_super[ind[0],i] ;sometimes get >1 match where zphot lies directly between 2 z bins
            flux_err_mock_zphot[ind_ll_mock[j],i] = flux_super_err[ind[0],i]     
