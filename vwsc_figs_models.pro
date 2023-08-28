@@ -72,9 +72,9 @@ xyouts, 0.9,0.65,textoidl('F_{burst}'),/norm,align=0.5,charsize=0.8
 ;cgcolorbar,position= [0.46,0.15,0.48,0.35],range=range_out,/noerase,format='(F0.1)',/vertical,charsize=0.8,divisions=5,/right
 ;xyouts, 0.47,0.37,textoidl('log(M*/M_{solar})'),/norm,align=0.5,charsize=0.8
 
-
-multiplot
-vwplot_2dhist,x_clean,y_clean,range,bins, weight1=alog10(params_clean.sfrav[2]/params_clean.mstr1),vmax = fltarr(nmod)+1,/nobar,loadct=loadct,range_out=range_out,xtitle=xtitle,ytitle=ytitle,ctreverse=ctreverse
+;The next lines commented out because the rand files don't contain sfrav, so the code crashes. Plot not used so commented out.
+;multiplot
+;vwplot_2dhist,x_clean,y_clean,range,bins, weight1=alog10(params_clean.sfrav[2]/params_clean.mstr1),vmax = fltarr(nmod)+1,/nobar,loadct=loadct,range_out=range_out,xtitle=xtitle,ytitle=ytitle,ctreverse=ctreverse
 ;color = bytscl(params.tauv0,top=ncolors-1)
 ;plot, x,y,/nodata,xtitle=xtitle,ytitle=ytitle,_extra=extra;,position = [0.15,0.15,0.45,0.5]
 ;plots,x,y,color=color,psym=8
